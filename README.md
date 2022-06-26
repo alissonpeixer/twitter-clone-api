@@ -7,7 +7,7 @@
 - Para assim estar testando meu conheicmentos e aprimorando os mesmo!
 <hr>
 
-- [ ] ❌ Finalizado || finished<br>
-- [x] ✅ Em progersso ||  In progress.
+- [ ]  Finalizado || finished.<br>
+- [x]  Em progersso ||  In progress.
 
 
