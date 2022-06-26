@@ -2,9 +2,9 @@
 <hr>
 - Olá, este repositorio é relacionado ao evento Full Stack Challenge da <a href='https://codar.me/'>Codar.Me</a>!
 
-- Bom o evento acabou com o app em fase de aprimoramento, e com base no meus conhecimentos estou tentando aprimorar!
+- Bom o evento acabou com o app em fase de aprimoramentos, e com base nos meus conhecimentos estou tentando aprimoralo!
 
-- Para estar testando meu conheicmentos e aprimorando os mesmo!
+- Para assim estar testando meu conheicmentos e aprimorando os mesmo!
 <hr>
 
 - [ ] Finalizado?<br>
