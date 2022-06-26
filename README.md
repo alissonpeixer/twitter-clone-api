@@ -9,6 +9,6 @@
 
 - [ ] Finalizado?<br>
 - [ ] finished?<br>
-- [ ] https://github.com/octo-org/octo-repo/issues/740 🔥 Em progersso... || 🔥 In progress...
+- [x] 🔥 Em progersso... || 🔥 In progress...
 
 
