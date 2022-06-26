@@ -1,0 +1,57 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
+}
+
+datasource db {
+  provider             = "mysql"
+  url                  = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
+}
+
+model User {
+  id       String @id @default(cuid())
+  name     String
+  surname  String
+  username String @unique
+  email    String @unique
+  password String
+  phone    String @unique
+  Post Post[]
+  PostLikes PostLikes[]
+}
+
+
+model Post{
+  postId  String @id @unique @default(cuid()) 
+  text   String
+  userId String 
+  user User @relation(fields: [userId], references: [id])
+  @@index([userId])
+
+  likeID String 
+  postlikes  PostLikes @relation(fields: [likeID], references: [likeId])
+  @@index([likeID])
+}
+
+
+model PostLikes{
+  likeId  String @id  @default(cuid())
+  userId String 
+  likes   Int   @default(0)
+  user User @relation(fields: [userId], references: [id])
+  @@index([userId])
+  Post Post[]
+
+  isLiked isLiked[]
+}
+
+model isLiked{
+  likeID  String @id 
+  isLiked String  @unique
+  isId  String  @default(cuid())
+  postlikes  PostLikes @relation(fields: [likeID], references: [likeId])
+  @@index([likeID])
+}
+
+
